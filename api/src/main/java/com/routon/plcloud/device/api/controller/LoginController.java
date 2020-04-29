@@ -17,5 +17,14 @@ public class LoginController {
         return "login";
     }
 
+    @RequestMapping(value = "/dologin")
+    public String login(){
+
+
+
+
+        return "login";
+    }
+
 
 }
