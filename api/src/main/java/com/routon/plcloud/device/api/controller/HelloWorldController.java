@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author FireWang
  * @date 2020/4/26 17:15
+ * 示例接口Controller代码
  */
 @RestController
 public class HelloWorldController {
