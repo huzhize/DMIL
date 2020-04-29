@@ -53,7 +53,7 @@ public class RouteFilter implements Filter {
                 return;
             }
 
-            //取出用户缓存做登录状态校验
+            //取出用户缓存做登录状态校验,校验不通过则直接跳转登录页
             UserProfile userProfile = (UserProfile) session.getAttribute("userProfile");
             if (userProfile == null || userProfile.getCurrentUserId() < 0) {
                 logger.info("当前的用户会话认证无效，需重新登录........contextpath["+ request.getContextPath() +"]");
