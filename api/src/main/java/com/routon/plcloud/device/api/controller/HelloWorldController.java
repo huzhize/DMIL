@@ -15,6 +15,7 @@ public class HelloWorldController {
     @Autowired
     private HelloService helloService;
 
+    //展示数据库数据
     @GetMapping("/hello")
     public String hello(){
         String msg = "Hello, SpringBoot!";
@@ -25,6 +26,7 @@ public class HelloWorldController {
         return msg;
     }
 
+    //向数据库添加一条数据
     @GetMapping("/addhello")
     public String addhello(){
         String msg = "Hello, SpringBoot!";
@@ -35,6 +37,7 @@ public class HelloWorldController {
         return msg;
     }
 
+    //清空示例表格数据
     @GetMapping("/deletehello")
     public String deletehello(){
         String msg = "Hello, SpringBoot!";
