@@ -20,8 +20,8 @@ public class ShiroConfig {
         shiroFilterFactoryBean.setLoginUrl("/login/index");//未登录时的页面
         shiroFilterFactoryBean.setUnauthorizedUrl("/login/unauthc");//访问未授权页面
         shiroFilterFactoryBean.setSuccessUrl("/authc/index.html");//登录成功后的页面
-        filterChainDefinitionMap.put("/**","authc");
         filterChainDefinitionMap.put("/static/**","anon");
+        filterChainDefinitionMap.put("/**","authc");
         filterChainDefinitionMap.put("/login/**", "anon");
         filterChainDefinitionMap.put("/logout","logout");
         filterChainDefinitionMap.put("/auth/index.html","authc");

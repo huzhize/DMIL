@@ -15,7 +15,7 @@ import java.io.IOException;
  * @date 2020/4/29 13:14
  * 过滤器，用于过滤请求的url，判断用户登录状态
  */
-@Component
+//@Component
 public class RouteFilter implements Filter {
     //拦截日志
     private Logger logger = LoggerFactory.getLogger(RouteFilter.class);
